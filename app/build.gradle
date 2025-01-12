@@ -1,14 +1,16 @@
-apply plugin: 'com.android.application'
+plugins {
+    alias(libs.plugins.android.application)
+}
 
 android {
-    compileSdkVersion 31
-    buildToolsVersion "29.0.3"
+    namespace 'com.wwxiaoqi.get.calligraphy'
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.wwxiaoqi.get.calligraphy"
-        minSdkVersion 19
-        targetSdkVersion 31
-        versionCode 1
+        minSdk 19
+        targetSdk 35
+        versionCode 10
         versionName "1.0"
     }
 
@@ -25,6 +27,5 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: "libs", include: ["*.jar"])
-    compileOnly 'de.robv.android.xposed:api:82'
+    compileOnly libs.xposed.api
 }
