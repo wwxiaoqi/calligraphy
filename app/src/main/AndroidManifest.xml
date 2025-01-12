@@ -8,17 +8,25 @@
         android:supportsRtl="true"
         tools:ignore="MissingApplicationIcon">
 
+        <!-- 是否是 xposed 模块 -->
         <meta-data
             android:name="xposedmodule"
             android:value="true" />
 
+        <!-- 模块描述 -->
         <meta-data
             android:name="xposeddescription"
-            android:value="LSPosed" />
+            android:value="活字生花，游笔天下。" />
 
+        <!-- 最低 xposed 版本号 -->
         <meta-data
             android:name="xposedminversion"
-            android:value="93" />
+            android:value="54" />
+
+        <!-- 模块作用域 -->
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/xposedscope"/>
 
     </application>
 
